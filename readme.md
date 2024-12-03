@@ -20,11 +20,9 @@
 - ID --> BIGINT, AI
 - nome
 - id_corso_laurea
-- id_insegnante
 
 ## INSEGNANTI
 - ID --> BIGINT, AI
-- id_dipartimento
 - id_corso_specifico
 - nome
 - cognome
@@ -32,8 +30,7 @@
 
 ## STUDENTI
 - ID --> BIGINT, AI
-- id_dipaartimento
-- id_corso_specifico
+- id_corso_laurea
 - nome
 - cognome
 - data di nascita
@@ -43,3 +40,5 @@
 ## APPELLI
 - ID --> BIGINT, AI
 - id_corso_specifico
+- data 
+- tipo
