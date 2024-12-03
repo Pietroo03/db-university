@@ -10,8 +10,6 @@
 ## DIPARTIMENTI
 - ID --> BIGINT, AI
 - name
-- piano
-- numero aula
 
 ## CORSI LAUREA (collegato ai dipartimenti)
 - ID --> BIGINT, AI
