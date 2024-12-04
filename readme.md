@@ -10,16 +10,26 @@
 ## DIPARTIMENTI
 - ID --> BIGINT, AI
 - name
+- sito weeb
+- numero di telefono
+- email
 
 ## CORSI LAUREA (collegato ai dipartimenti)
 - ID --> BIGINT, AI
 - id_dipartimento
 - nome
+- descrizione
+- duraata
 
 ## CORSI SPECIFICI (collegato ai corsi di laurea)
 - ID --> BIGINT, AI
-- nome
 - id_corso_laurea
+- nome
+- descrizione
+
+## PIVOT
+- id_corso_specifico
+- id_insegnante
 
 ## INSEGNANTI
 - ID --> BIGINT, AI
@@ -37,8 +47,14 @@
 - email
 - numero di telefono
 
+# ESAMI STUDENTI
+- id_studente
+- id_appello
+- voto
+
 ## APPELLI
 - ID --> BIGINT, AI
 - id_corso_specifico
-- data 
+- data
+- ora 
 - tipo
