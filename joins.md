@@ -36,3 +36,5 @@ FROM `degrees`
 JOIN `courses` ON `degrees`.`id`= `courses`.`degree_id`
 JOIN `course_teacher` ON `courses`.`id`= `course_teacher`.`course_id`
 JOIN `teachers` ON `course_teacher`.`teacher_id`= `teachers`.`id`;
+
+## TASK 6
