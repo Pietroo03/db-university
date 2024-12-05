@@ -11,7 +11,7 @@ where cfu > 10
 ## TASK 3
 select *
 from students
-where year(date_of_birth) <= 1984;
+where TIMESTAMPDIFF(YEAR, 'date_of_birth', CURDATE()) > 30
 
 ## TASK 4
 select *
@@ -31,7 +31,7 @@ from degrees
 where level = 'magistrale'
 
 ## TASK 7
-select *
+select count('id') as totale dipartimenti
 from departments
 
 ## TASK 8
